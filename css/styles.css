@@ -104,42 +104,46 @@ header {
     background: none;
     border: none;
     font-size: 24px;
+    color: #000;
     cursor: pointer;
 }
 
 .tabs {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 432px;
     height: 35px;
     top: 159px;
     left: 6.44px;
-    padding: 0 0 0 20px;
+    padding-left: 20px;
     gap: 12px;
     opacity: 1;
     position: absolute;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
 
-.tab {
+
+ .tab {
     display: flex;
+    width: 127px;
+    padding: 8px 0px;
+    align-items: flex-start;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    width: 127px;
-    padding: 8px 0;
     border-radius: 20px;
     background: rgba(255, 255, 255, 1);
     color: rgba(143, 143, 143, 1);
-    font-family: Inter, sans-serif;
+    font-style: normal;
     font-size: 14px;
     font-weight: 600;
+    padding: 8px 20px;
     cursor: pointer;
     border: none;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.94px;
-    letter-spacing: -0.04em;
-    text-align: left;
 }
 
 .tab.active {
@@ -306,6 +310,6 @@ input:checked + .slider:before {
 
     .tabs {
         margin-top: 20px;
-        padding-left: 10px; 
+        padding-left: 10px; /* Adjusted padding left */
     }
 }
