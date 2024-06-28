@@ -314,10 +314,19 @@ input:checked + .slider:before {
     height: 72px;
 }
 
+.nav-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .footer-nav-active{
     color: #161846;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -327,6 +336,24 @@ input:checked + .slider:before {
     width: 24px;
     height: 24px;
     margin-bottom: 8px; 
+}
+
+.footer-nav .imgFavorite{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px; 
+}
+
+.footer-nav .imgStatistic{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px; 
+}
+
+.footer-nav .imgSetting{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
 }
 
 .footer-nav button {
