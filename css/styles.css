@@ -308,6 +308,6 @@ input:checked + .slider:before {
 
     .tabs {
         margin-top: 20px;
-        padding-left: 10px; /* Adjusted padding left */
+        padding-left: 10px; 
     }
 }
