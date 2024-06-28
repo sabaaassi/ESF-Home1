@@ -1,6 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +21,8 @@ body {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
-    padding: 20px;
     box-sizing: border-box;
-    margin: 0 auto;
+    padding: 35px;
 }
 
 .status-bar {
@@ -31,13 +34,10 @@ body {
 }
 
 #clock {
-    top: 23px;
     color: #000;
     font-family: Inter, sans-serif;
     font-size: 15px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .battery-icon {
@@ -60,6 +60,12 @@ body {
     border-radius: 1px;
 }
 
+header {
+    width: 100%;
+    height: 226px;
+    margin-bottom: 20px;
+}
+
 .header-content {
     text-align: center;
     position: relative;
@@ -76,102 +82,114 @@ body {
 }
 
 .header-content h1 {
-    margin: 82px 0 0 146.45px;
     margin: 0;
     font-size: 20px;
     color: #000;
     font-family: Inter, sans-serif;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
-.header-content p {
-    margin: 0;
-    font-size: 14px;
-    color: #000;
-    font-family: Inter;
+.header-content .device-count {
+    margin-top: 5px;
     font-size: 15px;
-    font-style: normal;
+    color: #000;
+    font-family: Inter, sans-serif;
     font-weight: 500;
-    line-height: normal;
+}
+
+.header-content .more-options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .tabs {
-    padding-top: 20px;
     display: flex;
+    justify-content: space-between;
     width: 432px;
     height: 35px;
-    padding-left: 20px;
-    align-items: flex-start;
+    top: 159px;
+    left: 6.44px;
+    padding: 0 0 0 20px;
     gap: 12px;
-    flex-shrink: 0;
+    opacity: 1;
+    position: absolute;
 }
 
-.tab {
+
+ .tab {
     display: flex;
-    width: 127px;
-    padding: 8px 0px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    width: 127px;
+    padding: 8px 0;
     border-radius: 20px;
-    background: rgba(43, 237, 179, 0.50);
-    color: #000;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(143, 143, 143, 1);
     font-family: Inter, sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.56px;
     cursor: pointer;
-    border: none; 
+    border: none;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+letter-spacing: -0.04em;
+text-align: left;
+
 }
 
 .tab.active {
-    display: flex;
-    width: 127px;
-    padding: 8px 0px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.56px;
-    border-radius: 20px;
-    background: rgba(43, 237, 179, 0.50);
-    }
-    
+    background: rgba(43, 237, 179, 0.5);
+    color: #000000;
+}
+
+
+main {
+    width: 100%;
+    height: 700px;
+    gap: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+}
 
 .overview {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
-    padding: 10px;
-    background: #f0f0f0;
-    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    margin: 0 18px 20px;
 }
 
 .overview-item {
     text-align: center;
+    flex: 1;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .devices {
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 18px;
 }
 
 .device {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    background: #f0f0f0;
     border-radius: 10px;
-    margin-bottom: 10px;
+    background: rgba(43, 237, 179, 0.10);
 }
 
 .device-icon {
@@ -179,12 +197,18 @@ body {
 }
 
 .device-name {
-    flex-grow: 1;
+    flex: 1;
     margin-left: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .device-status {
     margin-right: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .switch {
@@ -233,32 +257,40 @@ input:checked + .slider:before {
 }
 
 .add-device {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    margin: 0 18px 20px;
 }
 
 .add-device button {
     background: none;
-    border: 1px dashed #ccc;
-    padding: 10px;
-    border-radius: 10px;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
 }
 
 .footer-nav {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
-    background: #f0f0f0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-nav button {
     background: none;
     border: none;
-    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -268,5 +300,14 @@ input:checked + .slider:before {
         height: auto;
         max-width: 428px;
         max-height: 926px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .tabs {
+        margin-top: 20px;
+        padding-left: 10px; /* Adjusted padding left */
     }
 }
