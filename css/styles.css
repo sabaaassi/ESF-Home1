@@ -120,8 +120,7 @@ header {
     position: absolute;
 }
 
-
- .tab {
+.tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,12 +135,11 @@ header {
     cursor: pointer;
     border: none;
     font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 16.94px;
-letter-spacing: -0.04em;
-text-align: left;
-
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    letter-spacing: -0.04em;
+    text-align: left;
 }
 
 .tab.active {
