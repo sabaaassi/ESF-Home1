@@ -110,30 +110,30 @@ body {
 }
 
 .tab {
-    background: #f0f0f0;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.tab.active {
     display: flex;
     width: 127px;
     padding: 8px 0px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-shrink: 0;
-    color: #000;
-    font-family: Inter;
+    border-radius: 20px;
+    background: #fff;
+    color: #7a7a7a; 
+    font-family: Inter, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.56px;
-    border-radius: 20px;
+    letter-spacing: -0.56px;
+    cursor: pointer;
+    border: none; 
+}
+
+.tab.active {
     background: rgba(43, 237, 179, 0.50);
-    }
+    color: #000; 
+}
+
 
 .overview {
     display: flex;
