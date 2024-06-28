@@ -31,9 +31,8 @@ body {
 }
 
 #clock {
+    top: 23px;
     color: #000;
-    margin-left: 15px;
-    margin-right: 18px;
     font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -117,8 +116,8 @@ body {
     align-items: center;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #fff;
-    color: #7a7a7a; 
+    background: rgba(43, 237, 179, 0.50);
+    color: #000;
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -130,10 +129,23 @@ body {
 }
 
 .tab.active {
+    display: flex;
+    width: 127px;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    border-radius: 20px;
     background: rgba(43, 237, 179, 0.50);
-    color: #000; 
-}
-
+    }
+    
 
 .overview {
     display: flex;
