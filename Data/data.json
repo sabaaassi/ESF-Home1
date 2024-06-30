@@ -1,0 +1,25 @@
+{
+    "user": {
+        "name": "Aviv Itzhaky",
+        "photo": "images/Aviv.png"
+    },
+    "energyUsage": {
+        "date": "16 May, 2021",
+        "today": "28.6 kMh",
+        "thisMonth": "345.56 kWh"
+    },
+    "rooms": [
+        {
+            "name": "Living Room",
+            "image": "images/LivingRoom.png"
+        },
+        {
+            "name": "Kitchen",
+            "image": "images/Kitchen.png"
+        },
+        {
+            "name": "Bedroom",
+            "image": "images/Bedroom.png"
+        }
+    ]
+}
