@@ -352,3 +352,195 @@ input:checked + .slider:before {
         max-width: none;
     }
 }
+
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+/*.container {
+    width: 428px;
+    height: 926px;
+    border-radius: 20px;
+    background: #ECEDEA;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 35px;
+}*/
+
+
+/*.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+}*/
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    width: 44px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: lightgray 0px 0.659px / 100% 115.367% no-repeat, #EFEDF2;
+    
+}
+
+.user-details p {
+    margin: 0;
+    
+}
+
+.user-details h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.notifications button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.energy-usage {
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.energy-usage h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.btn-more-details {
+    text-decoration: none;
+    color: bl;
+    position: absolute;
+    right: 15px;
+    flex-shrink: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.energy-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.energy-select, .date {
+    font-size: 14px;
+}
+
+.energy-stats {
+    display: flex;
+}
+
+.stat-today, .stat-month {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.rooms {
+    margin-top: 20px;
+}
+
+.rooms h2 {
+    margin-top: 0;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.room {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.room img {
+    background-size: cover;
+    background-position: center;
+    height: 132px;
+    width: 378px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.room h3 {
+color: #FFF;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.footer {
+    display: flex;
+    width: 442px;
+    height: 86px;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -1.903px 23.789px 0px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    bottom: 0;
+    width: 442px;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.footer .active {
+    color: #161846;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600px;
+    line-height: normal;
+}
