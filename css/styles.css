@@ -418,6 +418,12 @@
     margin-top: 16px;
     cursor: pointer;
   }
+
+  .add-device-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+  }  
   
   .device-form-container {
     display: none;
