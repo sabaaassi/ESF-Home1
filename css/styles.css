@@ -264,6 +264,34 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.overview-label {
+  color: #228F6E;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.percentage-label {
+  color: #11503D;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.img {
+  margin-left: 2px;
+  margin-top: -6px;
+  vertical-align: middle;
+  width: 12px;
+  height: 13px;
+}
+
 .overview h2 {
   color: #000;
   font-size: 20px;
@@ -550,6 +578,7 @@ input:checked + .slider:before {
     width: 100%;
   }
 }
+
 
 
 
