@@ -531,12 +531,12 @@ button[type="submit"], button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  background-color: #4CAF50;
+  background: rgba(43, 237, 179, 0.2);
   color: rgb(0, 0, 0); 
 }
 
 button[type="submit"]:hover, button[type="button"]:hover {
-  background-color: #45a049; 
+  background: rgba(43, 237, 179, 0.2);
 }
 
 .add-device-icon {
@@ -654,6 +654,13 @@ button[type="submit"]:hover, button[type="button"]:hover {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
 
 
 
