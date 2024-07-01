@@ -99,16 +99,18 @@
           <img class="add-device-icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdHHLp6DjtUlF6bmrYdeTno5fWGPAQa7JuF2uxkaHpzFhuxfAd" alt="Add Device">
           Add New Device
         </button>
-        <div class="device-form-container" style="display:none;">
+        <div class="message-box">
+          <h2>Add New Device</h2>
           <form id="device-form">
             <label for="device-name">Device Name:</label>
             <input type="text" id="device-name" name="device-name" required>
-            <label for="device-type">Device Type:</label>
-            <input type="text" id="device-type" name="device-type" required>
+            <label for="device-brand">Device Brand:</label>
+            <input type="text" id="device-brand" name="device-brand" required>
             <button type="submit">Submit</button>
             <button type="button" id="cancel-button">Cancel</button>
+            <button class="close-button">&times;</button>
           </form>
-        </div>
+        </div>        
       </div>
     </main>
     <footer>

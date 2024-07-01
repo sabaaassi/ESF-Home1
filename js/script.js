@@ -38,26 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-function updateClock() {
-    let currentTime = new Date();
-    let hours = currentTime.getHours();
-    let minutes = currentTime.getMinutes();
-
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-
-    let timeString = hours + ':' + minutes;
-    document.getElementById('clock').textContent = timeString;
-}
-
-function updateBattery(battery) {
-    let batteryLevel = battery.level * 100;
-    let batteryLevelElement = document.getElementById('battery-level');
-    batteryLevelElement.style.width = batteryLevel + '%';
-}
-
-
 document.addEventListener('DOMContentLoaded', function() {
     function updateClock() {
         const clockElement = document.getElementById('clock');
@@ -113,6 +93,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.querySelector('.back-button');
     backButton.addEventListener('click', function() {
         window.location.href = 'index.html';
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const addButton = document.querySelector('.add-device-button');
+    const messageBox = document.querySelector('.message-box');
+    const closeButton = document.querySelector('.close-button');
+    const cancelButton = document.getElementById('cancel-button');
+  
+    addButton.addEventListener('click', function() {
+      messageBox.classList.add('active');
+    });
+  
+    closeButton.addEventListener('click', function() {
+      messageBox.classList.remove('active');
+    });
+  
+    cancelButton.addEventListener('click', function() {
+      messageBox.classList.remove('active');
     });
   });
   
