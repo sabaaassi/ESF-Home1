@@ -378,6 +378,12 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .device-icon img {
+    width: 24px;
+    height: 24PX;
+    flex-shrink: 0;
+  }  
   
   .device-form-container {
     display: none;
