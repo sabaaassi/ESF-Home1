@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Logs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <div class="logo">
+                <img src="logo.png" alt="ESF Home Logo">
+            </div>
+            <div class="title">Automatin logs</div>
+            <button class="save-btn">SAVE</button>
+        </header>
+
+    <main>
+        <form id="automationForm">
+            <div class="form-group">
+                <label for="schedule">Schedule</label>
+                <input type="text" id="schedule" name="schedule" value="Dinner">
+            </div>
+            <div class="form-group">
+                <label for="start-time">Start time</label>
+                <input type="text" id="start-time" name="start-time" value="7:30pm">
+            </div>
+            <div class="form-group">
+                <label for="end-time">End time</label>
+                <input type="text" id="end-time" name="end-time" value="9:30pm">
+            </div>
+            <div class="form-group">
+                <label>Select date</label>
+                <div class="date-selector">
+                    <button type="button" class="day-btn">Sun</button>
+                    <button type="button" class="day-btn">Mon</button>
+                    <button type="button" class="day-btn">Tues</button>
+                    <button type="button" class="day-btn">Wed</button>
+                    <button type="button" class="day-btn">Thurs</button>
+                    <button type="button" class="day-btn">Fri</button>
+                    <button type="button" class="day-btn">Sat</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" id="addDeviceBtn" class="add-device-btn">+ Add Devices</button>
+            </div>
+            <div id="deviceList" class="device-list">
+                <div class="device-item">
+                    <span class="device-icon">&#128161;</span>
+                    <span class="device-name">Light</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <button type="button" class="edit-btn">Edit</button>
+                </div>
+                <div class="device-item">
+                    <span class="device-icon">&#128161;</span>
+                    <span class="device-name">Air Conditioner</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <button type="button" class="edit-btn">Edit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <button class="footer-nav-active">
+                <img src="data:image/png;base64,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" alt="Home" class="imgHome">
+                <div class="footer-nav-active">Home</div>
+            </button>
+            <button>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJozgiLbp53FrdOMsnQuFLhneYpf9UIOcAd5JgeL_vpP5o_CzT"alt="Calender" class="imgFavorite">
+                <div class ="nav-text">Calender</div>
+            </button>
+            <button>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoLQsABq0cXhDtTDS45gTGSvnVoHLBK_KwDgd6MNLH0HaqLkPG" alt="Statistic" class="imgStatistic"> 
+                <div class ="nav-text">Statistic</div>
+            </button>
+            <button>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9T_XbjTERPmzcrpRVe3zah9FASkPFocFL62yZCbgjRntUABEe"ait="Setting" class="imgSetting">
+                <div class="nav-text">Setting</div>
+            </button>
+        </nav>
+    </footer>
+</body>
+</html>
