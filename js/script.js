@@ -115,3 +115,52 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+  /*autlogs*/
+document.getElementById('addDeviceBtn').addEventListener('click', () => {
+    const deviceName = prompt('Enter device name:');
+    if (deviceName) {
+        addDevice(deviceName);
+    }
+});
+
+function addDevice(name) {
+    const deviceList = document.getElementById('deviceList');
+    const deviceItem = document.createElement('div');
+    deviceItem.className = 'device-item';
+    
+    const deviceIcon = document.createElement('span');
+    deviceIcon.className = 'device-icon';
+    deviceIcon.innerHTML = '&#128161;'; // Default light bulb icon
+    
+    const deviceName = document.createElement('span');
+    deviceName.className = 'device-name';
+    deviceName.textContent = name;
+    
+    const switchLabel = document.createElement('label');
+    switchLabel.className = 'switch';
+    const switchInput = document.createElement('input');
+    switchInput.type = 'checkbox';
+    switchInput.checked = true;
+    const slider = document.createElement('span');
+    slider.className = 'slider';
+    switchLabel.appendChild(switchInput);
+    switchLabel.appendChild(slider);
+    
+    const editBtn = document.createElement('button');
+    editBtn.className = 'edit-btn';
+    editBtn.textContent = 'Edit';
+    editBtn.addEventListener('click', () => {
+        const newName = prompt('Edit device name:', name);
+        if (newName) {
+            deviceName.textContent = newName;
+        }
+    });
+    
+    deviceItem.appendChild(deviceIcon);
+    deviceItem.appendChild(deviceName);
+    deviceItem.appendChild(switchLabel);
+    deviceItem.appendChild(editBtn);
+    
+    deviceList.appendChild(deviceItem);
+}
