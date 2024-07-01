@@ -259,17 +259,15 @@
   .overview {
     background: #ffffff;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .overview h2 {
-  font-size: 20px;
-    margin-top: -10px; 
-    left: 29px;
     color: #000;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.8px;
@@ -286,6 +284,15 @@
     flex-direction: column;
     gap: 16px;
     flex: 1;
+  }
+  
+  .devices-heading{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.8px;
   }
   
   .devices h2 {
@@ -306,6 +313,13 @@
     background-color: #E0E0E0; 
   }
   
+  .device-icon img {
+    vertical-align: middle;
+    width: 24px;
+    height: 24PX;
+    flex-shrink: 0;
+  }
+  
   .device-icon {
     font-size: 24px;
     width: 38px;
@@ -316,11 +330,17 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin-left: 10px; 
+    margin-right: 16px;
   }
   
   .device-status {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     margin-left: 10px;
+    margin-right: 16px; 
+    flex-grow: 1;
   }
   
   .switch {
@@ -378,12 +398,6 @@
     border-radius: 5px;
     cursor: pointer;
   }
-
-  .device-icon img {
-    width: 24px;
-    height: 24PX;
-    flex-shrink: 0;
-  }  
   
   .device-form-container {
     display: none;
@@ -424,12 +438,12 @@
     margin-top: 16px;
     cursor: pointer;
   }
-
+  
   .add-device-icon {
     width: 24px; 
     height: 24px;
     margin-right: 10px; 
-  }  
+  }
   
   .device-form-container {
     display: none;
@@ -540,6 +554,12 @@
       width: 100%;
     }
   }
+
+
+
+
+
+
 
 /* styles.css */
 * {
