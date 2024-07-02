@@ -1,5 +1,4 @@
 /* Living Room */
-/* Living Room */
 * {
   margin: 0;
   padding: 0;
@@ -1343,92 +1342,81 @@ input:checked + .slider:before {
 
 /* Living Room Air */
 
-/*.main-footer-container-Air {
-  
+.main-footer-container-Air {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   position: relative;
-}*/
-.main-footer-container-Air {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  position: relative;
-  width: 100%;
 }
 
 .ac-image {
   position: absolute;
+  top: 60px; 
   width: 275px;
   height: 98px;
   left: 50%;
-  top: 0%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .ac-image img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .circle {
+  position: absolute;
+  top: 250px; 
   width: 174px;
   height: 177px;
   border-radius: 50%;
   border: 10px solid #ccc;
-  position: relative;
-  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  z-index: 1;
 }
 
 .actions-container {
   text-align: center;
-  margin-top: 20px;
- 
-  left: 36px;
-  top: 90%;
-  width: calc(100% - 72px); 
+  margin-top: 400px;
+  left: 0;
+  right: 0;
+  bottom: 20px; 
 }
 
 .actions-container h3 {
   font-size: 16px;
   font-weight: 600;
-  text-align: left;
+  text-align: left; 
   margin-bottom: 10px;
-}
-
-.actions {
-  text-align: center;
-}
-
-.actions h2 {
-  margin-bottom: 10px;
-  color: #000;
 }
 
 .action-buttons {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: space-around; /* לפזר את הכפתורים במרכז */
+  gap: 42px; 
 }
 
 .action-button {
+  padding: 4px 22.5px;
   background-color: #b3e5fc;
   border-radius: 10px;
   padding: 10px;
-  width: 80px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  width: 100px;
   text-align: center;
+  align-items: center;
 }
 
 .action-button img {
+  justify-content: center;
   width: 30px;
   height: 30px;
 }
@@ -1439,7 +1427,7 @@ input:checked + .slider:before {
 }
 
 .cooling {
-  background-color: rgba(43, 237, 179, 0.5);
+  background: rgba(43, 237, 179, 0.50);
 }
 
 .heating {
@@ -1461,49 +1449,13 @@ input:checked + .slider:before {
   align-items: center;
   margin-top: 10px;
   cursor: pointer;
+  right: 20px; 
+}
+.actions {
+  text-align: center;
 }
 
-.arrow-button::before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid white;
-}
-
-.slider-Air {
-  width: 80%;
-  margin-top: 10px;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 8px;
-  background: #ccc;
-  outline: none;
-  opacity: 0.7;
-  transition: opacity .15s ease-in-out;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.slider-Air:hover {
-  opacity: 1;
-}
-
-.slider-Air::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.slider-Air::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  cursor: pointer;
-  border-radius: 50%;
+.actions h2 {
+  margin-bottom: 10px;
+  color: #000;
 }
