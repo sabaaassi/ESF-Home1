@@ -50,17 +50,25 @@ document.addEventListener("DOMContentLoaded", function() {
                 roomDiv.classList.add('room');
                 roomDiv.style.backgroundImage = `url(${room.image})`;
                 roomDiv.style.backgroundSize = 'auto';
-                roomDiv.innerHTML = `
-                    <h3>${room.name}</h3>
-                `;
+                roomDiv.dataset.roomName = room.name; // Store the room name
+                roomDiv.innerHTML = `<h3>${room.name}</h3>`;
+
                 roomsSection.appendChild(roomDiv);
+                roomDiv.addEventListener('click', () => {
+                    localStorage.setItem('selectedRoom', JSON.stringify(room));
+                    if (room.name === "Living Room") {
+                        window.location.href = "ListLivingRoom.html";
+                    }
+                    else {
+                        // Disable click for other rooms
+                        roomDiv.style.pointerEvents = 'none';
+                    }
+                }); 
             });
         })
         
 });
-document.getElementById("Living Room").addEventListener("click", function() {
-    window.location.href = "ListLivingRoom.html";
-  });
+
 
 document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data.json');
