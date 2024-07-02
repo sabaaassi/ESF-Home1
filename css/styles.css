@@ -749,37 +749,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   vertical-align: middle;
 }
 
-/*.btn-add{
-  background-color: #fff;
-  width: 25px;
-  border-radius: 15%;
-  border-color: #fff;
-  color: green;
-  font-size: medium;
-  font-weight: bold;
-}
-
-.btn-notifications{
-  border: none;
-  width: 25px;
-  border-radius: 15%;
-  border-color: #fff;
-  text-align: center;
-  font-size: small;
-  font-weight: bold;
-  align-items: center;
-}
-
-.btn-settings{
-  border: none;
-  width: 25px;
-  border-radius: 15%;
-  border-color: #fff;
-  text-align: center;
-  font-size: small;
-  font-weight: bold;
-  align-items: center;
-}*/
 
 .energy-usage {
   margin-top: 10px;
