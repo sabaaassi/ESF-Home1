@@ -1,5 +1,5 @@
 /*script.js for index page*/
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     fetch('data/data.json')
         .then(response => response.json())
         .then(data => {
@@ -25,7 +25,72 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         })
         .catch(error => console.error('Error loading JSON data:', error));
+});*/
+
+/*script.js for index page*/
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('./Data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Populate user info
+            document.querySelector('.user-photo').src = data.user.photo;
+            document.querySelector('.user-details h1').textContent = data.user.name;
+
+            // Populate energy usage
+            //get selected Date
+             var date = document.querySelector('.energy-select')
+             date.options[date.selectedIndex].text = data.energyUsage.date;
+            document.querySelector('.stat-today h3').textContent = data.energyUsage.today;
+            document.querySelector('.stat-month h3').textContent = data.energyUsage.thisMonth;
+
+            // Populate rooms
+            const roomsSection = document.querySelector('.rooms');
+            data.rooms.forEach(room => {
+                const roomDiv = document.createElement('div');
+                roomDiv.classList.add('room');
+                roomDiv.style.backgroundImage = `url(${room.image})`;
+                roomDiv.style.backgroundSize = 'auto';
+                roomDiv.innerHTML = `
+                    <h3>${room.name}</h3>
+                `;
+                roomsSection.appendChild(roomDiv);
+            });
+        })
+        .catch(error => console.error('Error loading JSON data:', error));
 });
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const response = await fetch('data.json');
+    const data = await response.json();
+
+    // Update user info
+    document.getElementById('userPhoto').src = data.user.photo;
+    document.getElementById('userName').textContent = data.user.name;
+
+    // Update energy usage
+    const dateSelect = document.getElementById('dateSelect');
+    const dateOption = dateSelect.querySelector('.date');
+    dateOption.textContent = data.energyUsage.date;
+    document.getElementById('todayUsage').textContent = data.energyUsage.today;
+    document.getElementById('monthUsage').textContent = data.energyUsage.thisMonth;
+
+    // Update rooms
+    const roomsContainer = document.getElementById('roomsContainer');
+    data.rooms.forEach(room => {
+        const roomElement = document.createElement('div');
+        roomElement.className = 'room';
+        roomElement.innerHTML = `
+            <img src="${room.image}" alt="${room.name}">
+            <p>${room.name}</p>
+        `;
+        roomsContainer.appendChild(roomElement);
+    });
+});
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     updateClock();

@@ -1,7 +1,7 @@
 {
     "user": {
         "name": "Aviv Itzhaky",
-        "photo": "images/Aviv.png"
+        "photo": "https://www6.0zz0.com/2024/07/02/09/329248887.png"
     },
     "energyUsage": {
         "date": "16 May, 2021",
@@ -11,15 +11,15 @@
     "rooms": [
         {
             "name": "Living Room",
-            "image": "images/LivingRoom.png"
+            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KkuRZB9-leoSdq6_dfm4PXy0ZT7NdYCx1AAOX0t8xf7y1q1-"
         },
         {
             "name": "Kitchen",
-            "image": "images/Kitchen.png"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBVyE31N1z4Wcz0jXdvTZWgQw5c9vU69JkL6VvqJ7suOhhyFv"
         },
         {
             "name": "Bedroom",
-            "image": "images/Bedroom.png"
+            "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKcmwbWv2jZmHS_nZULLZ_79j0JHZwkVG9HC0VbWUZciNbcSqY"
         }
     ]
 }
