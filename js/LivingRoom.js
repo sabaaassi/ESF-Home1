@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data/data.json')
+    fetch('Data/data.json')
       .then(response => response.json())
       .then(data => {
         devicesData = data.devices; 
