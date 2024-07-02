@@ -1348,13 +1348,22 @@ input:checked + .slider:before {
 
 /* Living Room Air */
 
-.main-footer-container-Air {
-  flex-grow: 1;
+/*.main-footer-container-Air {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   position: relative;
+}*/
+.main-footer-container-Air {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .ac-image {
@@ -1376,20 +1385,19 @@ input:checked + .slider:before {
   height: 177px;
   border-radius: 50%;
   border: 10px solid #ccc;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
+  z-index: 1;
 }
 
 .actions-container {
   text-align: center;
   margin-top: 20px;
-  position: absolute;
+ 
   left: 36px;
   top: 90%;
   width: calc(100% - 72px); 
@@ -1414,6 +1422,7 @@ input:checked + .slider:before {
 .action-buttons {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .action-button {
