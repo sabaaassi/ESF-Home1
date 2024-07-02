@@ -801,8 +801,8 @@ button[type="submit"]:hover, button[type="button"]:hover {
 .btn-add img,
 .btn-notifications img,
 .btn-settings img {
-  width: 24px; /* Adjust size as needed */
-  height: 24px; /* Adjust size as needed */
+  width: 24px; 
+  height: 24px; 
   vertical-align: middle;
 }
 
