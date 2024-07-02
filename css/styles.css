@@ -1270,26 +1270,18 @@ input:checked + .slider:before {
 
 .controls button {
   background-color: transparent;
-  border: 2px solid #4CAF50; 
+  border: 0.5px solid #4CAF50; 
   color: #4CAF50; 
-  font-size: 40px; 
-  width: 70px; 
-  height: 70px; 
+  font-size: 30px; 
+  width: 40px; 
+  height: 40px; 
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.controls button.decrease-button::before {
-  content: "\2212"; 
-}
-
-.controls button.increase-button::before {
-  content: "+";
-}
-
 .controls button::before {
-  font-size: 40px; 
+  font-size: 20px; 
   font-weight: bold;
 }
