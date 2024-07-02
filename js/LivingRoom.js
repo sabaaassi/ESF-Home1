@@ -2,25 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('data/data.json')
       .then(response => response.json())
       .then(data => {
-        devicesData = data.devices; // Store devices data
+        devicesData = data.devices; 
         initializeDevices(devicesData);
         populateOverview(data.overview.items);
-        updateDeviceCount(devicesData.length); // Update device count
+        updateDeviceCount(devicesData.length); 
       })
       .catch(error => console.error('Error loading data:', error));
   });
   
-  // Initialize devices on the page
   function initializeDevices(devices) {
     const devicesContainer = document.getElementById('devices-container');
-    devicesContainer.innerHTML = ''; // Clear existing devices
+    devicesContainer.innerHTML = ''; 
   
     devices.forEach(device => {
       devicesContainer.appendChild(createDeviceElement(device));
     });
   }
   
-  // Create device element
   function createDeviceElement(device) {
     const deviceDiv = document.createElement('div');
     deviceDiv.classList.add('device');
@@ -37,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const statusDiv = document.createElement('div');
     statusDiv.classList.add('device-status');
   
-    // Create switch element
     const switchLabel = document.createElement('label');
     switchLabel.classList.add('switch');
     const input = document.createElement('input');
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
     deviceDiv.appendChild(statusDiv);
   
-    // Add delete button
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'X';
     deleteBtn.addEventListener('click', function() {
@@ -83,24 +79,21 @@ document.addEventListener("DOMContentLoaded", function () {
     return deviceDiv;
   }
   
-  // Function to delete device by ID
   function deleteDevice(deviceId) {
     const index = devicesData.findIndex(device => device.id === deviceId);
     if (index !== -1) {
-      devicesData.splice(index, 1); // Remove device from data array
-      updateDeviceList(); // Update UI
-      updateDeviceCount(devicesData.length); // Update device count
+      devicesData.splice(index, 1); 
+      updateDeviceList(); 
+      updateDeviceCount(devicesData.length); 
     }
   }
   
-  // Function to add a new device (simulated for local testing, not updating JSON file)
   function addNewDevice(newDevice) {
     devicesData.push(newDevice); 
     updateDeviceList(); 
-    updateDeviceCount(devicesData.length); // Update device count
+    updateDeviceCount(devicesData.length); 
   }
   
-  // Function to update the device list UI
   function updateDeviceList() {
     const devicesContainer = document.getElementById('devices-container');
     devicesContainer.innerHTML = '';
@@ -110,10 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   
-  // Function to populate overview section
   function populateOverview(items) {
     const overviewContent = document.getElementById('overviewContent');
-    overviewContent.innerHTML = ''; // Clear existing content
+    overviewContent.innerHTML = ''; 
   
     items.forEach(item => {
       const div = document.createElement('div');
@@ -135,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item.label === 'This Month') {
         const flexContainer = document.createElement('div');
         flexContainer.style.display = 'flex';
-        flexContainer.style.alignItems = 'center'; // Align items horizontally
+        flexContainer.style.alignItems = 'center'; 
   
         const img = document.createElement('img');
         img.classList.add('img');
@@ -200,24 +192,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
-  // Function to update device element style based on its status
   function updateDeviceElementStyle(deviceElement, isOn) {
     if (isOn) {
       deviceElement.style.background = 'rgba(43, 237, 179, 0.2)';
-      deviceElement.style.color = '#000'; // Text color when device is ON
+      deviceElement.style.color = '#000'; 
     } else {
       deviceElement.style.background = 'rgba(239, 237, 242, 1)';
-      deviceElement.style.color = '#000'; // Text color when device is OFF
+      deviceElement.style.color = '#000'; 
     }
   }
   
-  // Function to update device count
   function updateDeviceCount(count) {
     const deviceCountElement = document.getElementById('device-count');
     deviceCountElement.textContent = count;
   }
   
-  // Function to update device count
   function updateDeviceCount(count) {
     const deviceCountElement = document.getElementById('device-count');
     deviceCountElement.textContent = `${count} Devices`;
