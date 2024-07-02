@@ -1189,7 +1189,7 @@ line-height: normal;
     background-color: #f8f8f8;
 }*/
 
-/*.container {
+/* .container {
     width: 428px;
     height: 926px;
     border-radius: 20px;
@@ -1199,16 +1199,16 @@ line-height: normal;
     position: relative;
     box-sizing: border-box;
     padding: 35px;
-}
+} */
 
-header {
+.header-automatiogs {
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
 
 }
-
+/* 
 .menu-icon {
     font-size: 24px;
     margin-right: 10px;
@@ -1428,4 +1428,4 @@ input:checked + .slider:before {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-}*/
+}*/ 
