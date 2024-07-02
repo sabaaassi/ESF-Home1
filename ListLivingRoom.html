@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Living Room</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js" defer></script>
+  <script src="js/LivingRoom.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -19,7 +19,8 @@
       <div class="header-content">
         <button class="back-button">&larr;</button>
         <h1>Living Room</h1>
-        <p class="device-count">4 Devices</p>
+        <p class="device-count" id="device-count">4 Devices</p>
+
         <button class="more-options">⋮</button>
       </div>
       <div class="tabs">
@@ -30,71 +31,18 @@
       </div>
     </header>
     <main class="main-footer-container">
-      <div class="Main">
+      <div class="Main-List">
         <div class="overview">
           <h2>Overview</h2>
-          <div class="overview-content">
-            <div>
-              <span class="overview-label">Today</span><br>8 kwh
-            </div>
-            <div>
-              <span class="overview-label">This Week</span><br>25 kwh
-            </div>
-            <div>
-              <span class="overview-label">This Month</span><br>89 kwh
-            </div>
-            <div>
-              <span class="percentage-label">10%</span>
-              <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF2o4qdbgxNaB0WCs3Gz7BH2j1oUQ4DaJOzEJB7OymOUIfft7N" alt="Icon" class="img">
-            </div>
+          <div class="overview-content" id="overviewContent">
           </div>
                
         </div>
         <h2 class="devices-heading">Devices</h2>
-        <div class="device" id="air-conditioner">
-          <div class="device-icon">
-            <img src="https://cdn-icons-png.flaticon.com/128/959/959711.png" alt="Air Conditioner Icon">
-          </div>
-          <div class="device-status">Air Conditioner<br>23°</div>
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
+
+        <div id="devices-container" class="devices-container">
         </div>
-        
-        <div class="device" id="main-lamp">
-          <div class="device-icon">
-            <img src="https://cdn-icons-png.flaticon.com/128/2961/2961545.png" alt="Main Lamp Icon">
-          </div>
-          <div class="device-status">Main Lamp<br>80% Dimness</div>
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
-        </div>
-        
-        <div class="device" id="desk-lamp">
-          <div class="device-icon">
-            <img src="https://cdn-icons-png.flaticon.com/128/3100/3100567.png" alt="Desk Lamp Icon">
-          </div>
-          <div class="device-status">Desk Lamp<br>Off</div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-        </div>
-        
-        <div class="device" id="smart-tv">
-          <div class="device-icon">
-            <img src="https://cdn-icons-png.flaticon.com/128/3647/3647039.png" alt="Smart TV Icon">
-          </div>
-          <div class="device-status">Smart TV<br>On</div>
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
-        </div>
-      
+                
         <button class="add-device-button">
           <img class="add-device-icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdHHLp6DjtUlF6bmrYdeTno5fWGPAQa7JuF2uxkaHpzFhuxfAd" alt="Add Device">
           Add New Device
@@ -106,6 +54,8 @@
             <input type="text" id="device-name" name="device-name" required>
             <label for="device-brand">Device Brand:</label>
             <input type="text" id="device-brand" name="device-brand" required>
+            <label for="device-icon">Device Icon URL:</label>
+            <input type="url" id="device-icon" name="device-icon" required>
             <button type="submit">Submit</button>
             <button type="button" id="cancel-button">Cancel</button>
             <button class="close-button">&times;</button>
@@ -120,7 +70,7 @@
           <div class="footer-nav-active">Home</div>
         </button>
         <button>
-          <img src="https://cdn-icons-png.flaticon.com/128/12887/12887924.png"alt="Calender" class="imgCalender">
+          <img src="https://cdn-icons-png.flaticon.com/128/2886/2886665.png"alt="Calender" class="imgCalender">
           <div class ="nav-text">Calender</div>
         </button>
         <button>
@@ -135,4 +85,4 @@
     </footer>
   </div>
 </body>
-</html>
+</html> 
