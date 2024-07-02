@@ -663,19 +663,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-
-.container {
-  display: flex;
-}
 
 .user-info {
   display: flex;
@@ -725,9 +712,6 @@ body {
   height: 20px;
   margin-right: 0px;
 }
-
-
-
 
 .notifications {
   display: flex;
@@ -981,15 +965,6 @@ margin-bottom: 10px;
   line-height: normal;
 }
 
-
-
-
-
-
-
-
-
-
 /* styles.css */
 /** {
     margin: 0;
@@ -1182,21 +1157,11 @@ line-height: normal;
 }*/
 
 /*autlogs*/
-/*body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}*/
-
-
-
 .header-automationlogs {
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-
 }
 
 .menu-icon {
