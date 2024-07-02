@@ -23,12 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const deviceDiv = document.createElement('div');
     deviceDiv.classList.add('device');
     deviceDiv.id = device.id;
-  
     const iconDiv = document.createElement('div');
     iconDiv.classList.add('device-icon');
     const iconImg = document.createElement('img');
     iconImg.src = device.icon;
     iconImg.alt = `${device.name} Icon`;
+    iconImg.addEventListener('click', function() {
+        if (device.id === 'air-conditioner') {
+            window.location.href = 'LivingRoomAir.html';
+        }
+      });
     iconDiv.appendChild(iconImg);
     deviceDiv.appendChild(iconDiv);
   
