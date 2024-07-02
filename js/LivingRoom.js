@@ -308,3 +308,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  const temperatureDisplay = document.getElementById('temperature-display');
+  const decreaseButton = document.querySelector('.decrease-button');
+  const increaseButton = document.querySelector('.increase-button');
+  
+  let temperature = 25; 
+  
+  function updateTemperature(newTemp) {
+    temperature = newTemp;
+    temperatureDisplay.textContent = `${temperature}°C`;
+  }
+  
+
+  decreaseButton.addEventListener('click', function() {
+    updateTemperature(temperature - 1);
+  });
+  
+  increaseButton.addEventListener('click', function() {
+    updateTemperature(temperature + 1);
+  });
+  
