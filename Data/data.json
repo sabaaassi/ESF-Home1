@@ -1,25 +1,63 @@
 {
     "user": {
-        "name": "Aviv Itzhaky",
-        "photo": "https://www6.0zz0.com/2024/07/02/09/329248887.png"
+      "name": "Aviv Itzhaky",
+      "photo": "https://www6.0zz0.com/2024/07/02/09/329248887.png"
     },
     "energyUsage": {
-        "date": "16 May, 2021",
-        "today": "28.6 kMh",
-        "thisMonth": "345.56 kWh"
+      "date": "16 May, 2021",
+      "today": "28.6 kMh",
+      "thisMonth": "345.56 kWh"
     },
     "rooms": [
-        {
-            "name": "Living Room",
-            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KkuRZB9-leoSdq6_dfm4PXy0ZT7NdYCx1AAOX0t8xf7y1q1-"
-        },
-        {
-            "name": "Kitchen",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBVyE31N1z4Wcz0jXdvTZWgQw5c9vU69JkL6VvqJ7suOhhyFv"
-        },
-        {
-            "name": "Bedroom",
-            "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKcmwbWv2jZmHS_nZULLZ_79j0JHZwkVG9HC0VbWUZciNbcSqY"
-        }
+      {
+        "name": "Living Room",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KkuRZB9-leoSdq6_dfm4PXy0ZT7NdYCx1AAOX0t8xf7y1q1-"
+      },
+      {
+        "name": "Kitchen",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBVyE31N1z4Wcz0jXdvTZWgQw5c9vU69JkL6VvqJ7suOhhyFv"
+      },
+      {
+        "name": "Bedroom",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKcmwbWv2jZmHS_nZULLZ_79j0JHZwkVG9HC0VbWUZciNbcSqY"
+      }
+    ],
+    "overview": {
+      "items": [
+        { "label": "Today", "value": "8 kwh" },
+        { "label": "This Week", "value": "25 kwh" },
+        { "label": "This Month", "value": "89 kwh" }
+      ]
+    },
+    "devices": [
+      {
+        "id": "air-conditioner",
+        "icon": "https://cdn-icons-png.flaticon.com/128/959/959711.png",
+        "name": "Air Conditioner",
+        "status": "23°",
+        "isOn": true
+      },
+      {
+        "id": "main-lamp",
+        "icon": "https://cdn-icons-png.flaticon.com/128/2961/2961545.png",
+        "name": "Main Lamp",
+        "status": "80% Dimness",
+        "isOn": true
+      },
+      {
+        "id": "desk-lamp",
+        "icon": "https://cdn-icons-png.flaticon.com/128/3100/3100567.png",
+        "name": "Desk Lamp",
+        "status": "",
+        "isOn": false
+      },
+      {
+        "id": "smart-tv",
+        "icon": "https://cdn-icons-png.flaticon.com/128/3647/3647039.png",
+        "name": "Smart TV",
+        "status": "",
+        "isOn": true
+      }
     ]
-}
+  }
+  

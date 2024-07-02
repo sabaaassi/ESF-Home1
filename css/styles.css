@@ -1,4 +1,5 @@
 /* Living Room */
+/* Living Room */
 * {
   margin: 0;
   padding: 0;
@@ -242,7 +243,7 @@ body {
   justify-content: space-between;
 }
 
-.Main {
+.Main-list {
   flex: 1;
   padding: 20px;
   display: flex;
@@ -256,55 +257,48 @@ body {
   opacity: 0px;
 }
 
-.overview {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 15px;
+.overview-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 400px;
+}
+
+.overview-container h2 {
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.overview-label {
-  color: #228F6E;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.4px;
-}
-
-.percentage-label {
-  color: #11503D;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.8px;
-}
-
-.img {
-  margin-left: 2px;
-  margin-top: -6px;
-  vertical-align: middle;
-  width: 12px;
-  height: 13px;
-}
-
-.overview h2 {
   color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.8px;
 }
 
 .overview-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 16px;
+  align-items: flex-end; 
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.overview-label {
+  font-size: 14px;
+  color: #006400;
+  margin-bottom: 5px;
+}
+
+.percentage-label {
+  font-size: 14px;
+  color: #006400;
+  margin-right: 5px;
+}
+
+.img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
 }
 
 .devices {
@@ -315,12 +309,8 @@ body {
 }
 
 .devices-heading{
+  margin-bottom: 20px;
   color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.8px;
 }
 
 .devices h2 {
@@ -447,6 +437,8 @@ input:checked + .slider:before {
 }
 
 .add-device-button {
+  position: fixed;
+  bottom: 100px;
   width: 368.58px;
   height: 46.41px;
   background-color: #ffffff;
@@ -459,7 +451,66 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.add-device-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.message-box {
+  display: none;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: fixed;
+  width: 400px; 
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.message-box h2 {
+  margin-top: 0;
+}
+
+.message-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-box form label {
+  font-weight: bold;
+}
+
+.message-box form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-box form button {
+  padding: 10px;
+  background-color: #228F6E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-box form button[type="button"] {
+  background-color: #ccc;
+}
+
+.message-box .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -566,6 +617,27 @@ button[type="submit"]:hover, button[type="button"]:hover {
   margin-bottom: 10px;
 }
 
+.devices-container {
+  padding-bottom: 20px;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+
+.delete-button {
+  background-color: #2BEDB3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.delete-button:hover {
+  background-color: #29ba8f;
+}
+
 .footer-nav {
   color: #2b3c46;
   display: flex;
@@ -637,21 +709,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
 @media (max-width: 480px) {
   .footer-nav {
       padding: 20px 35px; 
-  }
-}
-
-@media (max-height: 600px) {
-  .footer-nav {
-      position: relative;
-      transform: none;
-      width: 100%;
-      max-width: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .add-device-button {
-    width: 100%;
   }
 }
 
