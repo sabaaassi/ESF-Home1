@@ -1264,25 +1264,32 @@ input:checked + .slider:before {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  bottom: -30px; 
+  bottom: -60px; 
   width: 100%;
 }
 
 .controls button {
-  top: 80%;
   background-color: transparent;
-  border: none;
+  border: 2px solid #4CAF50; 
   color: #4CAF50; 
-  font-size: 32px;
-  width: 50px;
-  height: 50px;
+  font-size: 40px; 
+  width: 70px; 
+  height: 70px; 
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.controls button.decrease-button::before {
+  content: "\2212"; 
+}
+
+.controls button.increase-button::before {
+  content: "+";
+}
+
 .controls button::before {
-  font-size: 32px;
+  font-size: 40px; 
   font-weight: bold;
 }
