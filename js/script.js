@@ -177,12 +177,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
   /*autlogs*/
-document.getElementById('addDeviceBtn').addEventListener('click', () => {
-    const deviceName = prompt('Enter device name:');
-    if (deviceName) {
-        addDevice(deviceName);
-    }
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('addDeviceBtn').addEventListener('click', () => {
+        const deviceName = prompt('Enter device name:');
+        if (deviceName) {
+            addDevice(deviceName);
+        }
+    });
 });
+
 
 function addDevice(name) {
     const deviceList = document.getElementById('deviceList');
