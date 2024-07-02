@@ -713,6 +713,10 @@ button[type="submit"]:hover, button[type="button"]:hover {
 
 /* index.html */
 
+<<<<<<< HEAD
+=======
+/* index style */
+>>>>>>> bd625740eb73e4d276b2d840e0e32b8277367bf5
 * {
   margin: 0;
   padding: 0;
@@ -766,7 +770,7 @@ button[type="submit"]:hover, button[type="button"]:hover {
   margin-right: 0px;
 }
 
-.notifications {
+.Notifications {
   display: flex;
   justify-content: flex-end; 
   align-items: center;
@@ -921,7 +925,13 @@ button[type="submit"]:hover, button[type="button"]:hover {
 }
 
 .room {
+<<<<<<< HEAD
   height: 152px;
+=======
+  cursor: pointer;
+  position: relative;
+  height: 145px;
+>>>>>>> bd625740eb73e4d276b2d840e0e32b8277367bf5
   width: 390px;
   border-radius: 20px;
   align-self: flex-end;
@@ -975,10 +985,17 @@ margin-bottom: 10px;
 
 /*autlogs*/
 .header-automationlogs {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   padding: 10px;
   border-radius: 10px;
+=======
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+>>>>>>> bd625740eb73e4d276b2d840e0e32b8277367bf5
 }
 
 .menu-icon {
@@ -987,10 +1004,13 @@ margin-bottom: 10px;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .logo img {
   height: 40px;
 }
 
+=======
+>>>>>>> bd625740eb73e4d276b2d840e0e32b8277367bf5
 .title {
   flex-grow: 1;
   font-size: 20px;
@@ -1031,8 +1051,13 @@ main {
 }
 
 .date-selector {
+<<<<<<< HEAD
   display: flex;
   gap: 5px;
+=======
+    display: flex;
+    gap: 0px;
+>>>>>>> bd625740eb73e4d276b2d840e0e32b8277367bf5
 }
 
 .day-btn {
