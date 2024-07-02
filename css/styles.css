@@ -711,14 +711,13 @@ button[type="submit"]:hover, button[type="button"]:hover {
   }
 }
 
+/* index.html */
 
-/* styles.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .user-info {
   display: flex;
@@ -733,13 +732,11 @@ button[type="submit"]:hover, button[type="button"]:hover {
   border-radius: 8px;
   background: lightgray 0px 0.659px / 100% 115.367% no-repeat, #EFEDF2;
   margin-right: 10px;
-  
 }
 
 .user-details p {
   font-size: small;
   margin: 0;
-  
 }
 
 .user-details h1 {
@@ -776,7 +773,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   gap: 10px; 
 }
 
-/* Style the buttons */
 .btn-add,
 .btn-notifications,
 .btn-settings {
@@ -792,7 +788,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   justify-content: center;
 }
 
-/* Add specific styles for each button */
 .btn-add {
   color: green;
 }
@@ -859,15 +854,12 @@ button[type="submit"]:hover, button[type="button"]:hover {
 
 .separator{
   width: 1px;
-  height: 50px; /* Adjust height as needed */
+  height: 50px;
   background-color: gray;
   margin-top: 10px;
-  /* margin: 0 10px; */
 }
 
 #energyIcon{
-  /* align-self: center;
-  text-align: center; */
   margin-top: 6px;
   margin-left: 7px;
 }
@@ -875,7 +867,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
 .energy-details {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin-top: 10px;
   background-color: #fff;
   padding: 20px;
@@ -888,7 +879,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   flex-direction: row;
   margin-top: -10px;
   justify-content: space-between;
-
 }
 
 .energy-select {
@@ -931,8 +921,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
 }
 
 .room {
-  
-  /* position: relative; */
   height: 152px;
   width: 390px;
   border-radius: 20px;
@@ -941,7 +929,6 @@ button[type="submit"]:hover, button[type="button"]:hover {
   align-items: flex-end;
   margin-top: 20px;
   text-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.25);
-
 }
 
 .room h3 {
@@ -965,8 +952,6 @@ margin-bottom: 10px;
   border-radius: 20px 20px 0px 0px;
   background: #FFF;
   box-shadow: 0px -1.903px 23.789px 0px rgba(0, 0, 0, 0.06);
-  /* position: sticky;
-  bottom: 0; */
   width: 442px;
 }
 
@@ -977,7 +962,6 @@ margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  
 }
 
 .footer .active {
@@ -989,348 +973,157 @@ margin-bottom: 10px;
   line-height: normal;
 }
 
-/* styles.css */
-/** {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
-
-/*.container {
-    width: 428px;
-    height: 926px;
-    border-radius: 20px;
-    background: #ECEDEA;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    padding: 35px;
-}*/
-
-
-/*.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    background-color: transparent;
-}*/
-
-/*.user-info {
-    display: flex;
-    align-items: center;
-}
-
-.user-photo {
-    width: 44px;
-    height: 63px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: lightgray 0px 0.659px / 100% 115.367% no-repeat, #EFEDF2;
-    
-}
-
-.user-details p {
-    margin: 0;
-    
-}
-
-.user-details h1 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.notifications button {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-    
-}
-
-.energy-usage {
-    margin-top: 20px;
-    border-bottom: 1px solid #ddd;
-    flex-shrink: 0;
-    border-radius: 20px;
-}
-
-.energy-usage h2 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.btn-more-details {
-    text-decoration: none;
-    color: bl;
-    position: absolute;
-    right: 15px;
-    flex-shrink: 0;
-    margin: 0;
-    font-size: 18px;
-}
-
-.energy-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.energy-select, .date {
-    font-size: 14px;
-}
-
-.energy-stats {
-    display: flex;
-}
-
-.stat-today, .stat-month {
-    margin-left: 20px;
-    text-align: center;
-}
-
-.rooms {
-    margin-top: 20px;
-}
-
-.rooms h2 {
-    margin-top: 0;
-    margin: 0 0 10px 0;
-    font-size: 18px;
-}
-
-.room {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.room img {
-    background-size: cover;
-    background-position: center;
-    height: 132px;
-    width: 378px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-.room h3 {
-color: #FFF;
-font-family: Poppins;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.footer {
-    display: flex;
-    width: 442px;
-    height: 86px;
-    justify-content: center;
-    align-items: center;
-    gap: 56px;
-    flex-shrink: 0;
-    border-radius: 20px 20px 0px 0px;
-    background: #FFF;
-    box-shadow: 0px -1.903px 23.789px 0px rgba(0, 0, 0, 0.06);
-    position: sticky;
-    bottom: 0;
-    width: 442px;
-}
-
-.footer button {
-    background: none;
-    border: none;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    
-}
-
-.footer .active {
-    color: black;
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600px;
-    line-height: normal;
-}*/
-
 /*autlogs*/
 .header-automationlogs {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .menu-icon {
-    font-size: 24px;
-    margin-right: 10px;
-    cursor: pointer;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .logo img {
-    height: 40px;
+  height: 40px;
 }
 
 .title {
-    flex-grow: 1;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+  flex-grow: 1;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .save-btn {
-    background-color: #90ee90;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 20px;
+  background-color: #90ee90;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .form-group input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .date-selector {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .day-btn {
-    background-color: #90ee90;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    flex: 1;
-    text-align: center;
-    font-size: 14px;
+  background-color: #90ee90;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
 }
 
 .add-device-btn {
-    background-color: #90ee90;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 16px;
+  background-color: #90ee90;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 16px;
 }
 
 .device-list {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .device-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .device-icon {
-    font-size: 24px;
-    margin-right: 10px;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 .device-name {
-    flex-grow: 1;
-    font-size: 16px;
+  flex-grow: 1;
+  font-size: 16px;
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 34px;
-    height: 20px;
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
 }
 
 input:checked + .slider {
-    background-color: #90ee90;
+  background-color: #90ee90;
 }
 
 input:checked + .slider:before {
-    transform: translateX(14px);
+  transform: translateX(14px);
 }
 
 .edit-btn {
@@ -1402,7 +1195,7 @@ input:checked + .slider:before {
 
 .action-buttons {
   display: flex;
-  justify-content: space-around; /* לפזר את הכפתורים במרכז */
+  justify-content: space-around; 
   gap: 42px; 
 }
 
