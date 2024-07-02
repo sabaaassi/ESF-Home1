@@ -806,9 +806,8 @@ button[type="submit"]:hover, button[type="button"]:hover {
   vertical-align: middle;
 }
 
-
 .energy-usage {
-  margin-top: 10px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -923,7 +922,7 @@ button[type="submit"]:hover, button[type="button"]:hover {
 }
 
 .rooms {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .rooms h2 {
