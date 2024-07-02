@@ -56,8 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 roomsSection.appendChild(roomDiv);
             });
         })
-        .catch(error => console.error('Error loading JSON data:', error));
+        
 });
+document.getElementById("Living Room").addEventListener("click", function() {
+    window.location.href = "ListLivingRoom.html";
+  });
 
 document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('data.json');

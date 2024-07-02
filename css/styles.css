@@ -713,7 +713,7 @@ button[type="submit"]:hover, button[type="button"]:hover {
 }
 
 
-/* styles.css */
+/* index style */
 * {
   margin: 0;
   padding: 0;
@@ -770,7 +770,7 @@ button[type="submit"]:hover, button[type="button"]:hover {
   margin-right: 0px;
 }
 
-.notifications {
+.Notifications {
   display: flex;
   justify-content: flex-end; 
   align-items: center;
@@ -932,9 +932,9 @@ button[type="submit"]:hover, button[type="button"]:hover {
 }
 
 .room {
-  
-  /* position: relative; */
-  height: 152px;
+  cursor: pointer;
+  position: relative;
+  height: 145px;
   width: 390px;
   border-radius: 20px;
   align-self: flex-end;
@@ -1185,7 +1185,7 @@ line-height: normal;
 .header-automationlogs {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -1193,10 +1193,6 @@ line-height: normal;
     font-size: 24px;
     margin-right: 10px;
     cursor: pointer;
-}
-
-.logo img {
-    height: 40px;
 }
 
 .title {
@@ -1240,7 +1236,7 @@ main {
 
 .date-selector {
     display: flex;
-    gap: 5px;
+    gap: 0px;
 }
 
 .day-btn {
