@@ -715,9 +715,9 @@ button[type="submit"]:hover, button[type="button"]:hover {
 
 .notifications {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end; 
   align-items: center;
-  gap: 10px; /* Add space between buttons if needed */
+  gap: 10px; 
 }
 
 /* Style the buttons */
